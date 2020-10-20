@@ -46,10 +46,15 @@ const getRecipe = async () => {
         let postInstructions = document.createElement('p')
         //  setting elements
         postRecipe.className = 'getRecipe'
+        postTitle.className = `recipe-title`
         postTitle.innerText = recipeTitle
-        postImg.innerHTML = recipeImg
+        postImg.className = `recipe-img`
+        postImg.src = recipeImg
+        postTime.className = `recipe-time`
         postTime.innerText = `Cook-time: ${recipeTime} mins`
+        postServings.className = `recipe-servings`
         postServings.innerText = `Serves: ${recipeServings}`
+        postSummary.className = `recipe-summary`
         postSummary.innerHTML = recipeSum
         postIngredients.className = 'recipe-ingredients'
         postIngredients.innerHTML = `<strong>Ingredients:</strong> ${fullList}`
