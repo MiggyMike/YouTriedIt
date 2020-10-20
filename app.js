@@ -25,12 +25,13 @@ const getRecipe = async () => {
         let recipeTime = response.data.recipes[0].readyInMinutes
         let recipeServings = response.data.recipes[0].servings
         let recipeSum = response.data.recipes[0].summary
-        let recipeIngr = response.data.recipes[0].extendedIngredients[0].original
-        // response.data.recipes[0].extendedIngredients[0].original make a forEach loop
-        // for (const value of iterator) {
-        //     console.log(value)
-        // }
+        let recipeIngr = response.data.recipes[0].extendedIngredients
         let recipeInstructions = response.data.recipes[0].instructions
+
+        let fullList = []
+        recipeIngr.forEach(extendedIngredients => fullList.push(extendedIngredients.original))
+
+        console.log(fullList)
 
         // created display area
         let displayArea = document.querySelector('.recipe')
@@ -41,6 +42,7 @@ const getRecipe = async () => {
         let postTime = document.createElement('h3')
         let postServings = document.createElement('h3')
         let postSummary = document.createElement('p')
+        let postIngredients = document.createElement('div')
         let postInstructions = document.createElement('p')
         //  setting elements
         postRecipe.className = 'getRecipe'
@@ -49,6 +51,8 @@ const getRecipe = async () => {
         postTime.innerText = `Cook-time: ${recipeTime} mins`
         postServings.innerText = `Serves: ${recipeServings}`
         postSummary.innerHTML = recipeSum
+        postIngredients.className = 'recipe-ingredients'
+        postIngredients.innerHTML = `<strong>Ingredients:</strong> ${fullList}`
         postInstructions.className = 'recipe-instructions'
         postInstructions.innerHTML = `<strong>Instructions:</strong> ${recipeInstructions}`
         //  appending to page
@@ -57,6 +61,7 @@ const getRecipe = async () => {
         postRecipe.appendChild(postTime)
         postRecipe.appendChild(postServings)
         postRecipe.appendChild(postSummary)
+        postRecipe.appendChild(postIngredients)
         postRecipe.appendChild(postInstructions)
         displayArea.appendChild(postRecipe)
     } catch (error) {
