@@ -5,7 +5,7 @@ const SP_APP_KEY = '8c9f372da27b476eb93e564aeb0fd513'
 const SPOON_API = `https://api.spoonacular.com/recipes/random?apiKey=${SP_APP_KEY}&reicpe=true`
 
 
-
+// collect JSON info
 const getRecipe = async () => {
     try {
         console.log('first')
@@ -28,10 +28,13 @@ const getRecipe = async () => {
         let recipeIngr = response.data.recipes[0].extendedIngredients
         let recipeInstructions = response.data.recipes[0].instructions
 
+        //  consolidated all ingredients from line 28 to an array
         let fullList = []
         recipeIngr.forEach(extendedIngredients => fullList.push(extendedIngredients.original))
 
-        console.log(fullList)
+        //  converted fullList array to a ul list
+        let newList = makeUL(fullList)
+        console.log(`Listed Ingredients: ${newList}`)
 
         // created display area
         let displayArea = document.querySelector('.recipe')
@@ -43,6 +46,7 @@ const getRecipe = async () => {
         let postServings = document.createElement('h3')
         let postSummary = document.createElement('p')
         let postIngredients = document.createElement('div')
+        let postList = newList
         let postInstructions = document.createElement('p')
         //  setting elements
         postRecipe.className = 'getRecipe'
@@ -55,11 +59,11 @@ const getRecipe = async () => {
         postServings.className = `recipe-servings`
         postServings.innerText = `Serves: ${recipeServings}`
         postSummary.className = `recipe-summary`
-        postSummary.innerHTML = recipeSum
+        postSummary.innerHTML = `<strong>About this Dish </strong> ${recipeSum}`
         postIngredients.className = 'recipe-ingredients'
-        postIngredients.innerHTML = `<strong>Ingredients:</strong> ${fullList}`
+        postIngredients.innerHTML = '<strong>Ingredients:</strong>'
         postInstructions.className = 'recipe-instructions'
-        postInstructions.innerHTML = `<strong>Instructions:</strong> ${recipeInstructions}`
+        postInstructions.innerHTML = ` <strong>Instructions:</strong> ${recipeInstructions} `
         //  appending to page
         postRecipe.appendChild(postTitle)
         postRecipe.appendChild(postImg)
@@ -67,14 +71,34 @@ const getRecipe = async () => {
         postRecipe.appendChild(postServings)
         postRecipe.appendChild(postSummary)
         postRecipe.appendChild(postIngredients)
+        postIngredients.appendChild(newList)
         postRecipe.appendChild(postInstructions)
         displayArea.appendChild(postRecipe)
     } catch (error) {
         (error => console.log('Error', error))
     }
 }
+//  function to turn array into list
+function makeUL(array) {
+    // Create the list element:
+    let list = document.createElement('ul');
 
-//  creating reset/clear
+    for (let i = 0; i < array.length; i++) {
+        // Create the list item:
+        let item = document.createElement('li');
+
+        // Set its contents:
+        item.appendChild(document.createTextNode(array[i]));
+
+        // Add it to the list:
+        list.appendChild(item);
+    }
+
+    // Finally, return the constructed list:
+    return list;
+}
+
+//  creating reset/clear an function
 var clearElements = document.getElementById('clear-recipe');
 
 function clearAll() {
@@ -87,7 +111,7 @@ let node = document.getElementById("clear-recipe");
 node.querySelectorAll('*').forEach(n => n.remove());
 
 
-
+// Event Listeners
 document.querySelector('#search').addEventListener('click', getRecipe)
 document.querySelector('#clear-all').addEventListener('click', clearAll)
 
