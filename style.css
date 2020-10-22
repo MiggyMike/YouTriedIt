@@ -58,6 +58,11 @@ nav a {
     align-items: center;
 }
 
+main {
+    display: flex;
+    flex-flow: column wrap;
+}
+
 h1 {
     color: white;
     font-family: 'Montserrat', sans-serif;
@@ -67,6 +72,13 @@ h1 {
     line-height: 11vw;
     text-shadow: 10px 10px 11px rgba(0, 0, 0, 0.29);
 
+  } 
+
+
+ h2 {
+     text-align: center;
+    color: #41444B;
+    font-size: 2.5vw;
   } 
 
 button {
