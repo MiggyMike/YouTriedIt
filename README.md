@@ -23,10 +23,10 @@ ___
 * Well this app is for you! Here you a given random recipes at the click of a button. If you don't like what you see, click again... KEEP clicking until you find something that makes go 'mmmm'! 
 
 
-<img src=img/mobilefulllandingpageview.png width="60" height="auto"/>
-<img src=img/tablet_veiw.png width="100" height="auto"/>
-<img src=img/desktop_YTI.png width="100" height="auto"/>
-<img src=img/desktop_YTI_recipe.png width="100" height="auto"/>
+<img src=img/mobilefulllandingpageview.png width="28%" height="auto"/>
+<img src=img/tablet_veiw.png width="50%" height="auto"/>
+<img src=img/desktop_YTI.png width="45%" height="auto"/>
+<img src=img/desktop_YTI_recipe.png width="45%" height="auto"/>
 
 ___
 
