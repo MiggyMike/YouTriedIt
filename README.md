@@ -22,6 +22,10 @@ ___
 
 * Well this app is for you! Here you a given random recipes at the click of a button. If you don't like what you see, click again... KEEP clicking until you find something that makes go 'mmmm'! 
 
+![app screen shot, mobile](img/mobilefulllandingpageview.png)
+![app screen shot, tablet](img/tablet_veiw.png)
+![app screen shot, desktop](img/desktop_YTI.png)
+![app screen shot, desktop](img/desktop_YTI_recipe.png)
 ___
 
 ### __Specs__
