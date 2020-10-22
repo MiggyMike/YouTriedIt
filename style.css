@@ -112,15 +112,21 @@ button.clear {
     margin: 2%;
     overflow: scroll;
     height: 90vh;
+    color: #41444B;
+    display: flex;
+    flex-flow: column wrap;
 }
 
 
 .recipe-title {
     padding-bottom: 10px;
+    color: #41444B;
     font-weight: bold;
 }
 
 .recipe-img {
+    display: flex;
+    margin: auto;
     max-width: 75%;
     padding-bottom: 10px;
  }
