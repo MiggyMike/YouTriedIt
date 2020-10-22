@@ -8,7 +8,6 @@ const SPOON_API = `https://api.spoonacular.com/recipes/random?apiKey=${SP_APP_KE
 // collect JSON info
 const getRecipe = async () => {
     try {
-        console.log('first')
         const response = await axios.request(SPOON_API)
         // testing calls to api
         console.log('second')
@@ -59,7 +58,7 @@ const getRecipe = async () => {
         postServings.className = `recipe-servings`
         postServings.innerText = `Serves: ${recipeServings}`
         postSummary.className = `recipe-summary`
-        postSummary.innerHTML = `<strong>About this Dish </strong> ${recipeSum}`
+        postSummary.innerHTML = `<strong>About this Dish: </strong> ${recipeSum}`
         postIngredients.className = 'recipe-ingredients'
         postIngredients.innerHTML = '<strong>Ingredients:</strong>'
         postInstructions.className = 'recipe-instructions'
@@ -78,6 +77,8 @@ const getRecipe = async () => {
         (error => console.log('Error', error))
     }
 }
+
+
 //  function to turn array into list
 function makeUL(array) {
     // Create the list element:
