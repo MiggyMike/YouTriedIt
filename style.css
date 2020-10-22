@@ -1,151 +1,255 @@
 * {
     margin: 0;
 }
-body {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  flex: 100%;
-  font-family: 'Lato', sans-serif;
-  /* background-color: #FDDB3A; */
-  background: rgb(253,234,145);
-  background: radial-gradient(circle, rgba(253,234,145,1) 35%, rgba(255,211,0,1) 100%);
-  height: 100vh;
+/* TABLET */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1023px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        /* background-color: #FDDB3A; */
+        background: rgb(253,234,145);
+        background: radial-gradient(circle, rgba(253,234,145,1) 35%, rgba(255,211,0,1) 100%);
+        height: 100vh;
+      }
+      nav  {
+        height: 1.5vh;
+        position: sticky;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        background-color: #41444B;
+        padding: 20px;
+    }
+
+    nav li {
+        padding:0 10px;
+        list-style-type: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+    div.wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        flex: 100%;
+        margin: 0 20px;
+    }
+    .item1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10% auto 5%;
+        width: 75%;
+    }
+    .jumbo-text {
+        display: flex;
+        float: left;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin-left: 2%;
+        font-size: 10vw;
+        letter-spacing: 0;    
+        line-height: 14vw;
+        text-shadow: 10px 10px 11px rgba(0, 0, 0, 0.29);
+    }
+    main h2{
+        font-size: 4vw;
+        padding-bottom: 5%;
+    }
+
+    button {
+        font-size: 2vw;
+        background-color: #41444B;
+        border-radius: 46px;
+        border-style: none;
+        padding: 9px 32px;
+        margin: 12px auto;
+        width: fit-content;
+        color: white;
+        outline: none;
+    }
+    .recipe {
+        margin: 0 10% 10% 10%;
+        color: #41444B;
+    }
+    .recipe-title {
+        padding-bottom: 10px;
+        color: #41444B;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recipe-img {
+        display: flex;
+        margin: 5% auto;
+        max-width: 100vw;
+        border-radius: 10px;
+        border-style: groove;
+        border-color: white;
+    }
+
+
 }
+/* LAPTOP */
+@media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 
-nav  {
-  width: 100%;
-  position: sticky;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-end;
-  background-color: #41444B;
-  padding: 20px;
+    body {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        flex: 100%;
+        font-family: 'Lato', sans-serif;
+        /* background-color: #FDDB3A; */
+        background: rgb(253,234,145);
+        background: radial-gradient(circle, rgba(253,234,145,1) 35%, rgba(255,211,0,1) 100%);
+        height: 100vh;
+    }
+
+    nav  {
+        width: 100%;
+        position: sticky;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        background-color: #41444B;
+        padding: 20px;
+    }
+
+    nav li {
+        padding:0 10px;
+        list-style-type: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .wrapper  {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .item1 { 
+        height: 100vh;
+        width: 50vw;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .item2 { 
+        height: 100vh;
+        width: 50vw;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    main {
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    h1 {
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: 13vw;
+        letter-spacing: -6px;
+        line-height: 11vw;
+        text-shadow: 10px 10px 11px rgba(0, 0, 0, 0.29);
+
+    } 
+
+
+    h2 {
+        text-align: center;
+        color: #41444B;
+        font-size: 2.5vw;
+    } 
+
+    .search-section {
+        display: flex;
+        flex-flow: row wrap;
+
+    }
+    button {
+        font-size: 2vw;
+        background-color: #41444B;
+        border-radius: 46px;
+        border-style: none;
+        padding: 9px 32px;
+        margin: 12px auto;
+        width: fit-content;
+        color: white;
+        outline: none;
+    }
+    
+    button.clear {
+        border-radius: 100px;
+        background-color: #feee9cb8;
+        border-style: none;
+        padding: 9px 32px;
+        margin: auto;
+        width: fit-content;
+        color: white;
+    }
+
+    .recipe {
+        margin: 2%;
+        overflow: scroll;
+        height: 90vh;
+        color: #41444B;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+
+    .recipe-title {
+        padding-bottom: 10px;
+        color: #41444B;
+        font-weight: bold;
+    }
+
+    .recipe-img {
+        display: flex;
+        margin: 2% auto 5%;
+        max-width: 75%;
+        border-radius: 10px;
+        border-style: groove;
+        border-color: white;
+    }
+    .recipe-time {
+        max-width: 75%;
+        padding-bottom: 10px;
+    }
+    .recipe-servings {
+        max-width: 75%;
+        padding-bottom: 10px;
+    }
+    .recipe-summary {
+        padding-bottom: 10px;
+    }
+    .recipe-ingredients {
+        max-width: 75%;
+        padding-bottom: 10px;
+    }
+    .recipe-instructions {
+        padding-bottom: 10px;
+    }
 }
-
-nav li {
-  padding:0 10px;
-  list-style-type: none;
-  
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-.wrapper  {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.item1 { 
-    height: 100vh;
-    width: 50vw;
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.item2 { 
-    height: 100vh;
-    width: 50vw;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-}
-
-main {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-h1 {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    font-size: 13vw;
-    letter-spacing: -6px;
-    line-height: 11vw;
-    text-shadow: 10px 10px 11px rgba(0, 0, 0, 0.29);
-
-  } 
-
-
- h2 {
-    text-align: center;
-    color: #41444B;
-    font-size: 2.5vw;
-  } 
-
-.search-section {
-    display: flex;
-    flex-flow: row wrap;
-
-}
-button {
-    font-size: 2vw;
-    background-color: #41444B;
-    border-radius: 46px;
-    border-style: none;
-    padding: 9px 32px;
-    margin: 12px auto;
-    width: fit-content;
-    color: white;
-    outline: none;
-  }
-  
-button.clear {
-    border-radius: 100px;
-    background-color: #feee9cb8;
-    border-style: none;
-    padding: 9px 32px;
-    margin: auto;
-    width: fit-content;
-    color: white;
-  }
-
-.recipe {
-    margin: 2%;
-    overflow: scroll;
-    height: 90vh;
-    color: #41444B;
-    display: flex;
-    flex-flow: column wrap;
-}
-
-
-.recipe-title {
-    padding-bottom: 10px;
-    color: #41444B;
-    font-weight: bold;
-}
-
-.recipe-img {
-    display: flex;
-    margin: auto;
-    max-width: 75%;
-    padding-bottom: 10px;
- }
-.recipe-time {
-    max-width: 75%;
-    padding-bottom: 10px;
- }
-.recipe-servings {
-    max-width: 75%;
-    padding-bottom: 10px;
- }
-.recipe-summary {
-    padding-bottom: 10px;
- }
-.recipe-ingredients {
-    max-width: 75%;
-    padding-bottom: 10px;
- }
-.recipe-instructions {
-    padding-bottom: 10px;
- }
