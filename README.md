@@ -18,7 +18,9 @@ ___
 
 ### __Description__
 
-* This app/site is for those who have an interest in cooking/baking, whathaveyou, and just don't know were to start. If you're up for the challenge and some fun, you've come to the right place. 
+* Do you enjoy eating? Do you enjoy cooking? Do get overwhelmed with all and options or just don't know where to start? Have you been in the store and had no idea what to make for dinner? How about, you want to try new dishes but dont want to look them up. 
+
+* Well this app is for you! Here you a given random recipes at the click of a button. If you don't like what you see, click again... KEEP clicking until you find something that makes go 'mmmm'! 
 
 ___
 
@@ -30,11 +32,11 @@ ___
 
 ### __What to expect__
 
-* As a use you should be able to enter a type of dish or base and find a recipe to cook.
+* As a user you will receive random recipes at the click of a button
 
-* As a user you will receive all the ingredients and measurement 
+* With each recipe, as a user you will be provided cook-time, servings, ingredients, and instructions
 
-* As a user you will receive the amount of time to cook the recipe
+* As a user, you will commit to your recipe and the next and ENJOY!
 
 ___
 
@@ -45,8 +47,11 @@ ___
 
 * ##### [ ]  Post overall rating rating/stars
   
+* ##### [ ]  Bookmark, send in email
+
+* ##### [ ]  Sigm Up, Login
 ___
 
 ###### _CREDITS_
-* ###### API: 
-* ###### IMAGES: 
+* ###### API: [Spoonacular](https://api.spoonacular.com/)
+* ###### IMAGES: [Unsplash] (https://unsplash.com/s/photos/cooking)
