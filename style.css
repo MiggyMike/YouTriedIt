@@ -1,6 +1,138 @@
 * {
     margin: 0;
 }
+
+/* MOBILE */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body {
+        width: 100%;
+        font-family: 'Lato', sans-serif;
+        /* background-color: #FDDB3A; */
+        background: rgb(253,234,145);
+        background: radial-gradient(circle, rgba(253,234,145,1) 35%, rgba(255,211,0,1) 100%);
+        height: 100vh;
+      }
+      nav  {
+        position: sticky;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        background-color: #41444B;
+        
+    }
+
+    nav li {
+        padding:0 10px;
+        padding: 20px;
+        border-top: rgb(46, 47, 48);
+        /* border-style: solid; */
+        text-align: center;
+        /* width: 100%; */
+        list-style-type: none;
+        text-transform: uppercase;
+        letter-spacing: 1.25vw;
+    }
+
+    nav li:hover {
+        text-transform: uppercase;
+        background-color: rgb(104, 107, 114);
+    }
+
+    .navbar-items li a {
+        display: block;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: white;
+    }
+    
+    .toggle {
+        order: 1;
+        font-size: 20px;
+        color: white;
+    }
+    .nav-i {
+        order: 3;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+    .active .nav-i {
+        display: block;
+    }
+    div.wrapper{
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        flex: 100%;
+        margin: 0 20px;
+    }
+    .item1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 10% auto 5%;
+        width: 75%;
+    }
+    .jumbo-text {
+        display: flex;
+        /* float: left; */
+        justify-content: center;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        margin-left: 2%;
+        font-size: 10vw;
+        letter-spacing: 0;    
+        line-height: 14vw;
+        text-shadow: 10px 10px 11px rgba(0, 0, 0, 0.29);
+    }
+    main h2{
+        font-size: 4vw;
+        padding-bottom: 5%;
+    }
+
+    button {
+        font-size: 2vw;
+        background-color: #41444B;
+        border-radius: 46px;
+        border-style: none;
+        padding: 9px 32px;
+        margin: 12px auto;
+        width: fit-content;
+        color: white;
+        outline: none;
+    }
+    .recipe {
+        margin: 0 10% 10% 10%;
+        color: #41444B;
+    }
+    .recipe-title {
+        padding-bottom: 10px;
+        color: #41444B;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .recipe-img {
+        display: flex;
+        margin: 5% auto;
+        max-width: 100vw;
+        border-radius: 10px;
+        border-style: groove;
+        border-color: white;
+    }
+
+
+    img {
+        width: 100%;
+    }
+}
 /* TABLET */
 @media only screen 
   and (min-device-width: 768px) 
