@@ -81,24 +81,24 @@
     }
     .jumbo-text {
         display: flex;
-        /* float: left; */
         justify-content: center;
         color: white;
         font-family: 'Montserrat', sans-serif;
         text-transform: uppercase;
         margin-left: 2%;
-        font-size: 10vw;
+        font-size: 16vw;
         letter-spacing: 0;    
         line-height: 14vw;
         text-shadow: 10px 10px 11px rgba(0, 0, 0, 0.29);
+        padding-bottom: 7%;
     }
     main h2{
-        font-size: 4vw;
+        font-size: 6vw;
         padding-bottom: 5%;
     }
 
     button {
-        font-size: 2vw;
+        font-size: 4vw;
         background-color: #41444B;
         border-radius: 46px;
         border-style: none;
@@ -119,19 +119,20 @@
         text-align: center;
     }
 
+    img {
+        margin: 0;
+        width: 100%;
+    }
     .recipe-img {
         display: flex;
         margin: 5% auto;
-        max-width: 100vw;
         border-radius: 10px;
         border-style: groove;
         border-color: white;
     }
 
 
-    img {
-        width: 100%;
-    }
+
 }
 /* TABLET */
 @media only screen 
