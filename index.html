@@ -5,27 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <title>YouTriedIt</title>
 </head>
-<header>
-    <h3>Welcome to</h3>
-    <h1>You Tried It</h1>
-</header>
-
-<main>
-    <h2>What are we trying today:</h2>
-    <div class="search-section">
-        <!-- <input type="text" id="blank" placeholder="Search Recipe Here"> -->
-        <button id="search">Get New Recipe</button>
-        <button id="clear-all">Clear page</button>
-    </div>
-</main>
-<section class="recipe-list">
-    <h2>Here we are:</h2>
-    <div class="recipe" id="clear-recipe"></div>
-</section>
 
 <body>
+    <nav>
+        <li><a href="landing.html">home</a></li>
+        <li><a href="#" class="selected">try it</a></li>
+        <li><a href="contact.html">contact</a></li>
+    </nav>
+    <div class="wrapper">
+        <div class="item1 header-bg">
+            <header>
+                <h1 class="jumbo-text">You </h1>
+                <h1 class="jumbo-text"> Tried </h1>
+                <h1 class="jumbo-text"> It</h1>
+            </header>
+            <main>
+                <h2>What are we trying today:</h2>
+                <div class="search-section">
+                    <button id="search">get new recipe</button>
+                    <button class="clear" id="clear-all">clear page</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    <div class="item2">
+        <section class="recipe-list">
+            <div class="recipe" id="clear-recipe"></div>
+        </section>
+    </div>
+    </div>
+
+
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="app.js"></script>
 </body>
