@@ -108,13 +108,12 @@ function clearAll() {
     console.timeEnd("node.remove");
 }
 
-let node = document.getElementById("clear-recipe");
-node.querySelectorAll('*').forEach(n => n.remove());
-
 
 // Event Listeners
+// load recipe
 document.querySelector('#search').addEventListener('click', getRecipe)
-document.querySelector('#clear-all').addEventListener('click', clearAll)
+// clear recipe
+document.querySelector('#search').addEventListener('click', clearAll)
 
 
 // window.onload = getRecipe
