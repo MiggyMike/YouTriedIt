@@ -86,9 +86,6 @@ function clearAll() {
 }
 
 
-document.querySelector('#search').addEventListener('click', getRecipe)
-document.querySelector('#search').addEventListener('click', clearAll)
-
 
 window.onload = getRecipe
 
@@ -106,3 +103,7 @@ function toggleMenu() {
 }
 
 toggle.addEventListener("click", toggleMenu, false);
+
+
+document.querySelector('#search').addEventListener('click', getRecipe)
+document.querySelector('#search').addEventListener('click', clearAll)
