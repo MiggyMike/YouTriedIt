@@ -76,25 +76,29 @@ h1 {
 
 
  h2 {
-     text-align: center;
+    text-align: center;
     color: #41444B;
     font-size: 2.5vw;
   } 
 
+.search-section {
+    display: flex;
+    flex-flow: row wrap;
+
+}
 button {
-    font-size: 1.5vw;
+    font-size: 2vw;
     background-color: #41444B;
     border-radius: 46px;
     border-style: none;
     padding: 9px 32px;
-    margin: auto;
+    margin: 12px auto;
     width: fit-content;
     color: white;
     outline: none;
   }
   
-.clear {
-    font-size: 1.5vw;
+button.clear {
     border-radius: 100px;
     background-color: #feee9cb8;
     border-style: none;
