@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="main.css">
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
 
@@ -14,22 +14,27 @@
 <body>
     <nav class="navbar-items">
         <li class="logo"></li>
-        <li class="nav-i"><a href="#">home</a></li>
-        <li class="nav-i"><a href="index.html">try it</a></li>
+        <li class="nav-i"><a href="index.html">home</a></li>
+        <li class="nav-i"><a href="#">try it</a></li>
         <li class="toggle"><i class="fas fa-bars"></i></li>
     </nav>
     <div class="wrapper">
         <div class="item1 header-bg">
             <header>
-                <h1 class="jumbo-text">You </h1>
+                <h1 class="jumbo-text"> You </h1>
                 <h1 class="jumbo-text"> Tried </h1>
                 <h1 class="jumbo-text"> It</h1>
             </header>
+            <main>
+                <h2>What are we trying today:</h2>
+                <div class="search-section">
+                    <button id="search">get new recipe</button>
+                </div>
+            </main>
         </div>
         <div class="item2">
-            <section>
-                <p>are you ready to start cooking?</p>
-                <button><a href="index.html" class=" btn-continue">continue</a></button>
+            <section class="recipe-list">
+                <div class="recipe" id="clear-recipe"></div>
             </section>
         </div>
     </div>
