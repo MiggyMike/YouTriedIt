@@ -6,7 +6,7 @@
 
 ##### Michael Jennings
 
-[GitHub](https://github.com/MiggyMike) | [You Tried It](https://github.com/MiggyMike/YouTriedIt) | [Twitter](https://twitter.com/imikey_irock) | [Linkedin](https://www.linkedin.com/in/mjennings6/) | [Website](https://miggymike.github.io/) | [Trello Board](https://trello.com/b/9kLBt0fX/you-tried-it)
+[GitHub](https://github.com/MiggyMike) | [You Tried It](http://you-tried-it.surge.sh/index.html) | [Twitter](https://twitter.com/imikey_irock) | [Linkedin](https://www.linkedin.com/in/mjennings6/) | [Website](https://miggymike.github.io/) | [Trello Board](https://trello.com/b/9kLBt0fX/you-tried-it)
 
 ___
 
