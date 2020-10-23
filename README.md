@@ -27,10 +27,6 @@ ___
 <img src=img/Landing.png width="45%" height="auto"/>
 <img src=img/MainMobile.png width="8%" height="auto"/>
 
-### __Prototype__
-<img src=img/mobilefullpageview.png width="8%" height="auto"/>
-<img src=img/desktop_YTI_recipe.png width="45%" height="auto"/>
-
 ___
 
 ### __Specs__
