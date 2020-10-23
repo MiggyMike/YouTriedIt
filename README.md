@@ -1,12 +1,12 @@
 
-# __YOU TRIED IT__
+# __YOU TRIED IT__ 
 
 
 #### Date: 10/16/2020
 
 ##### Michael Jennings
 
-[GitHub](https://github.com/MiggyMike) | [Twitter](https://twitter.com/imikey_irock) | [Linkedin](https://www.linkedin.com/in/mjennings6/) | [Website](https://miggymike.github.io/) | [Trello Board](https://trello.com/b/9kLBt0fX/you-tried-it)
+[GitHub](https://github.com/MiggyMike) | [You Tried It](https://github.com/MiggyMike/YouTriedIt) | [Twitter](https://twitter.com/imikey_irock) | [Linkedin](https://www.linkedin.com/in/mjennings6/) | [Website](https://miggymike.github.io/) | [Trello Board](https://trello.com/b/9kLBt0fX/you-tried-it)
 
 ___
 
@@ -21,6 +21,7 @@ ___
 * Do you enjoy eating? Do you enjoy cooking? Do get overwhelmed with all and options or just don't know where to start? Have you been in the store and had no idea what to make for dinner? How about, you want to try new dishes but dont want to look them up. 
 
 * Well this app is for you! Here you a given random recipes at the click of a button. If you don't like what you see, click again... KEEP clicking until you find something that makes go 'mmmm'! 
+
 
 ### __WireFrame__
 <img src=img/Landing.png width="45%" height="auto"/>
