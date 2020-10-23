@@ -23,7 +23,7 @@ ___
 * Well this app is for you! Here you a given random recipes at the click of a button. If you don't like what you see, click again... KEEP clicking until you find something that makes go 'mmmm'! 
 
 ### __WireFrame__
-<img src=img/landing.png width="45%" height="auto"/>
+<img src=img/Landing.png width="45%" height="auto"/>
 <img src=img/mainMobile.png width="8%" height="auto"/>
 
 ### __Prototype__
