@@ -24,7 +24,7 @@ ___
 
 ### __WireFrame__
 <img src=img/Landing.png width="45%" height="auto"/>
-<img src=img/mainMobile.png width="8%" height="auto"/>
+<img src=img/MainMobile.png width="8%" height="auto"/>
 
 ### __Prototype__
 <img src=img/mobilefullpageview.png width="8%" height="auto"/>
